@@ -227,15 +227,6 @@ button {
 }
 
 .button {
-  cursor: pointer;
-  display: block;
-  min-width: 169px;
-  height: 56px;
-  border: none;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.button {
   color: #fff;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -244,6 +235,12 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
+  cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-text-title {
@@ -367,7 +364,7 @@ button {
 }
 
 .team-div {
-  padding: 32px 0;
+  /* padding: 32px 0; */
 }
 
 .team-subtitle {
@@ -380,6 +377,7 @@ button {
 }
 
 .icon-team {
+  padding: 32px 0;
 }
 
 .icon-team-list {
@@ -407,12 +405,12 @@ button {
   background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-team-link::before,
+/* .icon-team-link::before,
 .icon-team-link::after {
   width: auto;
   height: auto;
   content: "";
-  background-color: #4d5ae5;
+  background-color: #4d5ae5; */
 }
 
 /* .icon-team-link:hover::before,
@@ -471,8 +469,8 @@ button {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-text:hover {
-  /* transform: translateY(0%); */
+.portfolio-list:hover .overlay-text {
+  transform: translateY(0%);
 }
 
 .portfolio-list-item:hover {
@@ -619,7 +617,7 @@ letter-spacing: 0.02em;
   width: 40px;
   height: 40px;
   flex-shrink: 0;
-  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-footer-link {
